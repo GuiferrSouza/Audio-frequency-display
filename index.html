@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequency display</title>
+</head>
+
+<link rel="stylesheet" href="index.css">
+
+<body>
+
+  <main>
+    <div class="title">Audio frequency display</div>
+
+    <div class="wrapper">
+      <input type="file" id="fileInput" style="display: none;">
+      <button id="loadButton">Load Audio File</button>
+      <button id="playButton" disabled>Play</button>
+      <button id="stopButton" disabled>Stop</button>
+      <button id="effectBtn">Shake effect</button>
+    </div>
+
+    <div id="frequencyBox">
+      <span id="fileName"></span>
+      <span id="frequencyDisplay">0 Hz</span>
+      <div id="frequencyBar"></div>
+    </div>
+
+    <button id="downloadBtn">Download example audio file</button>
+  </main>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
